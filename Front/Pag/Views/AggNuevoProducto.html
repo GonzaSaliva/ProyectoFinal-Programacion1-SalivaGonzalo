@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../Styles/AggNuevoProducto.css">
+  <link rel="stylesheet" href="../Styles/NabvarSytle.css">
+  <title>Agregar Productos</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="Productos.html">Productos</a>
+            <a href="ActualizarStockProducto.html">Actualizar Stock Producto</a>
+            <a href="Compra.html">Generar Compra</a>
+            <a href="Viajes.html">Generar Viaje</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>Agregar nuevo producto</h1>
+        <form action="AggNuevoProducto.js" method="post" id="FormularioCrearProductos" class="cont-form">
+      
+            <label for="nombre">Nombre:</label>
+            <input type="text" pattern="[A-Za-z]{1,30}" id="nombre" name="nombre" required
+                placeholder="Nombre del producto...">
+            <br>
+
+            <label for="marca">Marca:</label>
+            <input type="text" pattern="[A-Za-z]{1,30}" id="marca" name="marca" required
+                placeholder="Marca del producto...">
+            <br>
+
+            <label for="alto_Caja">Altura de la caja (en cm):</label>
+            <input type="number" min="1" id="alto_Caja" name="alto_Caja" required
+                placeholder="Altura de la caja en cm...">
+            <br>
+
+            <label for="ancho_Caja">Ancho de la caja (en cm):</label>
+            <input type="number" min="1" id="ancho_Caja" name="ancho_Caja" required
+                placeholder="Ancho de la caja en cm...">
+            <br>
+
+            <label for="profundidad_Caja">Profundidad de la caja (en cm):</label>
+            <input type="number" min="1" id="profundidad_Caja" name="profundidad_Caja" required
+                placeholder="Profundidad de la caja en cm...">
+            <br>
+
+            <label for="precio_Unitario">Precio Unitario:</label>
+            <input type="number" id="precio_Unitario" name="precio_Unitario" required
+                placeholder="Precio por unidad del producto...">
+            <br>
+
+            <label for="stock_Minimo">Stock minimo:</label>
+            <input type="number" id="stock_Minimo" name="stock_Minimo" required
+                placeholder="Stock minimo del producto...">
+            <br>
+
+            <label for="en_Stock">En Stock:</label>
+            <input type="number" id="en_Stock" name="en_Stock" required placeholder="Stock actual del producto...">
+            <br>
+
+            <button type="submit">Cargar producto</button>
+        </form>
+    </main>
+</body>
+
+<script src="../Logic/AggNuevoProducto.js"></script>
+</html>

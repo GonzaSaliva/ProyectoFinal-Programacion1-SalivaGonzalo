@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Patente": "AA003OD",
+    "TamanioCarga": 3300,
+    "MaximoRecorridoKms": 350
+  },
+  {
+    "Patente": "AE718OJ",
+    "TamanioCarga": 5800,
+    "MaximoRecorridoKms": 550
+  },
+  {
+    "Patente": "AB5780E",
+    "TamanioCarga": 6700,
+    "MaximoRecorridoKms": 750
+  }
+]

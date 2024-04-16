@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .cont-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+h1 {
+    padding: 20px;
+    text-align: center;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px auto; /* Establece un margen superior e inferior de 20px y centra la tabla horizontalmente */
+    max-width: 1500px; /* Opcional: establece un ancho máximo para la tabla */
+}
+
+.tabla-productos th, .tabla-productos td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.tabla-productos th {
+    background-color: #f2f2f2;
+}
+
+.tabla-productos tr:hover {
+    background-color: #f1f1f1;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../Styles/Compra.css">
+  <link rel="stylesheet" href="../Styles/NabvarSytle.css">
+  <title>Generar Compra</title>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <a href="Productos.html">Productos</a>
+      <a href="AggNuevoProducto.html">Agregar Productos</a>
+      <a href="ActualizarStockProducto.html">Actualizar Stock</a>
+      <a href="Viajes.html">Generar Viaje</a>
+    </div>
+  </header>
+
+  <main>
+    <h1>Agregar nueva compra</h1>
+    <form action="Compra.js" method="post" id="FormularioCrearCompra" class="cont-form">
+
+      <label for="cod_Producto">Codigo Producto:</label>
+      <input type="number" id="cod_Producto" name="cod_Producto" required
+        placeholder="Codigo del producto...">
+      <br>
+
+      <label for="dni_Cliente">Dni Cliente:</label>
+      <input type="number" id="dni_Cliente" name="dni_Cliente" required
+        placeholder="Documento del cliente...">
+      <br>
+
+      <label for="cantidad">Cantidad:</label>
+      <input type="number" min="1" id="cantidad" name="cantidad" required
+        placeholder="Cantidad...">
+      <br>
+
+      <label for="fecha_Entrega">Fecha Entrega:</label>
+      <input type="datetime-local" min="1" id="fecha_Entrega" name="fecha_Entrega" required
+        placeholder="Ancho de la caja en cm...">
+      <br>
+
+      <button type="submit">Cargar producto</button>
+    </form>
+
+    <h2>Tabla Compras</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Codigo Producto</th>
+          <th>Dni Cliente</th>
+          <th>Cantidad</th>
+          <th>Fecha Entrega</th>
+        </tr>
+      </thead>
+      <tbody id="tablaHerramientas">
+
+      </tbody>
+    </table>
+    
+  </main>
+</body>
+
+<script src="../Logic/Compra.js"></script>
+</html>

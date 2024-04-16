@@ -1,0 +1,42 @@
+<!DOCTYPE html1>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../Styles/Viaje.css">
+    <link rel="stylesheet" href="../Styles/NabvarSytle.css">
+    
+    <title>Generar Viajes</title>
+</head>
+
+<body>
+  <main>
+    <div class="navbar">
+      <a href="Productos.html">Productos</a>
+      <a href="AggNuevoProducto.html">Agregar Productos</a>
+      <a href="ActualizarStockProducto.html">Actualizar Stock</a>
+      <a href="Compra.html">Generar Compra</a>
+    </div>
+
+    <h1>Agregar nuevo viaje</h1>
+    <form action="Viajes.js" method="post" id="FormularioCrearViaje" class="cont-form">
+
+      <label for="fecha_Desde">Fecha Desde:</label>
+      <input type="datetime-local" id="fecha_Desde" name="fecha_Desde" required
+        placeholder="Fecha desde...">
+      <br>
+
+      <label for="Fecha_Hasta">Fecha Hasta:</label>
+      <input type="datetime-local" id="Fecha_Hasta" name="Fecha_Hasta" required
+        placeholder="Fecha hasta...">
+      <br>
+
+      <button type="submit">Cargar viaje</button>
+    </form>
+  </main>
+</body>
+
+<script src="../Logic/Vajes.Js"></script>
+</html>

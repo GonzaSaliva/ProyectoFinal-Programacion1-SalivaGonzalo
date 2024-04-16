@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="../Styles/ProductosStyle.css">
+    <link rel="stylesheet" href="../Styles/NabvarSytle.css">
+
+    <title>Listado Productos</title>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a href="AggNuevoProducto.html">Agregar Productos</a>
+            <a href="ActualizarStockProducto.html">Actualizar Stock</a>
+            <a href="Compra.html">Generar Compra</a>
+            <a href="Viajes.html">Agregar Viaje</a>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Lista de productos</h1>
+
+        <table class="tabla-productos">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Alto de caja</th>
+                    <th>Ancho de caja</th>
+                    <th>Profundidad de caja</th>
+                    <th>Precio unitario</th>
+                    <th>Stock minimo</th>
+                    <th>En stock</th>
+                    <th>Id</th>
+                </tr>
+            </thead>
+        
+            <tbody id="tablaProductos">
+
+            </tbody>
+        </table>
+    </main>
+</body>
+
+<script src="../Logic/Productos.js"></script>
+</html>
